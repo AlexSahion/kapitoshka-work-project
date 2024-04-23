@@ -1,7 +1,5 @@
 @use "sass:math";
 //Fonts.................................................
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 //Config...................................................
 @import "config/fonts";
 @import "config/icons";
@@ -11,16 +9,5 @@
 @import "config/base";
 //Layout...................................................
 @import "layout/header";
-@import "layout/blocks/main";
-@import "layout/blocks/main-slider";
-@import "layout/blocks/infinite";
-@import "layout/blocks/interact";
-@import "layout/blocks/companies";
-@import "layout/blocks/advisors";
-@import "layout/blocks/team";
-@import "layout/blocks/explore";
-@import "layout/blocks/subscribe";
-@import "layout/blocks/roadmap";
-@import "layout/blocks/part";
 @import "layout/footer";
 
