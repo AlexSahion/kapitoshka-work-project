@@ -1,5 +1,7 @@
 @use "sass:math";
 //Fonts.................................................
+@import url('https://fonts.googleapis.com/css?family=Inter:regular,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700');
 //Config...................................................
 @import "config/fonts";
 @import "config/icons";
@@ -10,4 +12,3 @@
 //Layout...................................................
 @import "layout/header";
 @import "layout/footer";
-
