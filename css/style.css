@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:regular,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700");
 @font-face {
   font-family: icons;
   font-display: swap;
-  src: url("../fonts/icon.woff2") format("woff2");
+  src: url("../fonts/icons.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
@@ -27,11 +29,43 @@
   display: block;
 }
 
+._icon-facebook:before {
+  content: "\e900";
+}
+
+._icon-graph:before {
+  content: "\e901";
+}
+
+._icon-inst:before {
+  content: "\e902";
+}
+
+._icon-pintrest:before {
+  content: "\e903";
+}
+
+._icon-play:before {
+  content: "\e904";
+}
+
+._icon-send:before {
+  content: "\e905";
+}
+
+._icon-wallet:before {
+  content: "\e906";
+}
+
+._icon-youtube:before {
+  content: "\e907";
+}
+
 * {
   padding: 0;
   margin: 0;
   border: 0;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 *, *:before, *:after {
@@ -55,7 +89,7 @@ html, body {
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 14px;
+  font-size: 18px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -100,16 +134,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  font-family: "Font";
+  font-family: "Inter";
   position: relative;
-  background: rgb(242, 254, 255);
 }
-body.lock {
+body._lock {
   overflow: hidden;
 }
 
 [class*=__container] {
-  max-width: 1208px;
+  max-width: 1160px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -119,4 +152,138 @@ body.lock {
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+@media (max-width: 630px) {
+  .header {
+    height: 70px;
+  }
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100%;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.header__logo {
+  font-family: Poppins;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 150%;
+  color: rgb(255, 255, 255);
+}
+.header__logo span {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  color: rgb(17, 23, 100);
+}
+
+.menu__body {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+}
+@media (max-width: 630px) {
+  .menu__body {
+    transition: all 300ms ease-in-out;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow: auto;
+    padding: 50px 25px;
+  }
+  .menu__body._active {
+    top: 0;
+  }
+  .menu__body a {
+    font-size: 25px;
+  }
+}
+.menu__item {
+  list-style: none;
+}
+.menu__item ._active {
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.menu__link {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+  color: rgb(189, 194, 255);
+  transition: all 300ms ease-in-out;
+}
+.menu__link:hover {
+  color: rgb(255, 255, 255);
+}
+.menu__link:active {
+  color: #000;
+  translate: 0, 3px;
+}
+.menu__icon {
+  display: none;
+}
+@media (max-width: 630px) {
+  .menu__icon {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .menu__icon span {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .menu__icon span, .menu__icon::after, .menu__icon::before {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 300ms ease-in-out;
+  }
+  .menu__icon::after, .menu__icon::before {
+    content: "";
+    position: absolute;
+  }
+  .menu__icon::before {
+    top: 0;
+    left: 0;
+  }
+  .menu__icon::after {
+    bottom: 0;
+    left: 0;
+  }
+  .menu__icon._active span {
+    transform: scale(0);
+  }
+  .menu__icon._active::before {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+  .menu__icon._active::after {
+    bottom: 9px;
+    transform: rotate(-45deg);
+  }
 }
