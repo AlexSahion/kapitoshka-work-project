@@ -162,6 +162,21 @@ body._lock {
   text-transform: capitalize;
 }
 
+.subtitle {
+  color: rgb(51, 51, 51);
+  font-weight: 600;
+  line-height: 155.5555555556%;
+  letter-spacing: 1%;
+  text-transform: capitalize;
+}
+
+.text {
+  color: rgb(102, 102, 102);
+  line-height: 188.8888888889%;
+  letter-spacing: 1%;
+  text-transform: capitalize;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -486,5 +501,101 @@ body._lock {
 @media (max-width: 700px) {
   .main-block__img {
     display: none;
+  }
+}
+
+.creative__container {
+  padding-top: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 630px) {
+  .creative__container {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+.creative__img {
+  margin-left: -50px;
+  flex: 0 1 60%;
+}
+@media (max-width: 630px) {
+  .creative__img {
+    max-width: 90%;
+    margin-left: 0;
+  }
+}
+.creative__img img {
+  max-width: 100%;
+}
+.creative__content {
+  flex: 0 1 45%;
+}
+@media (max-width: 630px) {
+  .creative__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 920px) {
+  .creative__title {
+    font-size: 38px;
+  }
+}
+@media (max-width: 768px) {
+  .creative__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 630px) {
+  .creative__title {
+    text-align: center;
+  }
+}
+.creative__subtitle {
+  margin-top: 6px;
+}
+@media (max-width: 920px) {
+  .creative__subtitle {
+    font-size: 17px;
+  }
+}
+@media (max-width: 768px) {
+  .creative__subtitle {
+    font-size: 16px;
+  }
+}
+@media (max-width: 630px) {
+  .creative__subtitle {
+    text-align: center;
+  }
+}
+.creative__text {
+  margin-top: 28px;
+}
+@media (max-width: 920px) {
+  .creative__text {
+    font-size: 17px;
+    margin-top: 23px;
+  }
+}
+@media (max-width: 768px) {
+  .creative__text {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 700px) {
+  .creative__text {
+    margin-top: 18px;
+  }
+}
+@media (max-width: 630px) {
+  .creative__text {
+    text-align: center;
   }
 }
