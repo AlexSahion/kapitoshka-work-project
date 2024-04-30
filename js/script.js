@@ -8,3 +8,16 @@ if (iconMenu) {
 		menuBody.classList.toggle("_active")
 	})
 }
+
+new Swiper('.blog__slider', {
+	slidesPerView: 1,
+	spaceBetween: 25,
+	breakpoints: {
+		615: {
+			slidesPerView: 2,
+		}
+	},
+	pagination: {
+		el: '.blog__pagination',
+	}
+})
