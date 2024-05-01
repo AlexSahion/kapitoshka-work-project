@@ -14,6 +14,10 @@
 			row-gap: 25px;
 			align-items: stretch;
 		}
+		@media (max-width: 630px) {
+			padding-top: 35px;
+			padding-bottom: 35px;
+		}
 	}
 	&__content {
 		flex: 0 1 32%;
@@ -21,6 +25,9 @@
 			text-align: center;
 			max-width: 60%;
 			margin: 0 auto;
+		}
+		@media (max-width: 560px) {
+			max-width: 100%;
 		}
 	}
 
@@ -47,6 +54,9 @@
 		line-height: prc(33, 16);
 		letter-spacing: 3%;
 		text-transform: capitalize;
+		@media (max-width: 630px) {
+			margin-top: 23px;
+		}
 	}
 
 	&__lists {
@@ -116,6 +126,7 @@
 	&__socials {
 		display: flex;
 		column-gap: 10px;
+		row-gap: 10px;
 		a{
 			border-radius: 20%;
 			font-size: 24px;
