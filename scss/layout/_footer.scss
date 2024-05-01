@@ -1,0 +1,142 @@
+.footer {
+	background: rgb(243, 244, 255);
+	&__container{
+		padding-top: 88px;
+		padding-bottom: 58px;
+		display: flex;
+		align-items: start;
+		justify-content: space-between;
+		column-gap: 60px;
+		@media (max-width: 1050px) {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			row-gap: 25px;
+			align-items: stretch;
+		}
+	}
+	&__content {
+		flex: 0 1 32%;
+		@media (max-width: 1050px) {
+			text-align: center;
+			max-width: 60%;
+			margin: 0 auto;
+		}
+	}
+
+	&__logo {
+		color: rgb(84, 94, 225);
+		font-family: Poppins;
+		font-size: 36px;
+		font-weight: 600;
+		line-height: prc(54, 36);
+		span{
+			color: rgb(17, 23, 100);
+			font-family: Poppins;
+			font-size: 36px;
+			font-weight: 600;
+			line-height: prc(54, 36);
+		}
+	}
+
+	&__text {
+		margin-top: 36px;
+		color: $main-color;
+		font-size: 16px;
+		font-weight: 600;
+		line-height: prc(33, 16);
+		letter-spacing: 3%;
+		text-transform: capitalize;
+	}
+
+	&__lists {
+		flex: 0 1 63%;
+		display: flex;
+		align-items: start;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		row-gap: 20px;
+		column-gap: 20px;
+		@media (max-width: 1050px) {
+			flex: 0 1 100%;
+			justify-content: space-around;
+		}
+		@media (max-width: 410px) {
+			justify-content: space-between;
+		}
+		
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: 30px;
+		@media (max-width: 410px) {
+			flex: 0 1 45%;
+			
+		}
+	}
+
+	&__list-name {
+		color: rgb(25, 25, 25);
+		font-family: Poppins;
+		font-size: 24px;
+		font-weight: 600;
+		line-height: prc(36, 24);
+		text-transform: capitalize;
+	}
+
+	&__link {
+		flex: 0 1 auto;
+		color: $main-color;
+		font-family: Poppins;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 120%;
+		position: relative;
+		transition: $default-trans;
+		&::after{
+			content: '';
+			width: 0%;
+			height: 1px;
+			background-color: #000;
+			position: absolute;
+			bottom: -3px;
+			left: 0;
+			transition: $default-trans;
+		}
+		&:hover{
+			&::after{
+				width: 100%;
+			}
+			color: #000;
+		}
+	}
+
+	&__socials {
+		display: flex;
+		column-gap: 10px;
+		a{
+			border-radius: 20%;
+			font-size: 24px;
+			padding: 8px;
+			background: rgb(255, 255, 255);
+			color: rgb(84, 94, 225);
+			transition: $default-trans;
+			&:hover{
+				background: #000;
+				color: #fff;
+			}
+			&::after{
+				height: 0;
+			}
+		}
+		@media (max-width: 410px) {
+			flex-wrap: wrap;
+			a{
+				font-size: 20px;
+			}
+		}
+	}
+}
+
