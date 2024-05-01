@@ -1005,6 +1005,12 @@ body._lock {
     align-items: stretch;
   }
 }
+@media (max-width: 630px) {
+  .footer__container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
 .footer__content {
   flex: 0 1 32%;
 }
@@ -1013,6 +1019,11 @@ body._lock {
     text-align: center;
     max-width: 60%;
     margin: 0 auto;
+  }
+}
+@media (max-width: 560px) {
+  .footer__content {
+    max-width: 100%;
   }
 }
 .footer__logo {
@@ -1037,6 +1048,11 @@ body._lock {
   line-height: 206.25%;
   letter-spacing: 3%;
   text-transform: capitalize;
+}
+@media (max-width: 630px) {
+  .footer__text {
+    margin-top: 23px;
+  }
 }
 .footer__lists {
   flex: 0 1 63%;
@@ -1107,6 +1123,7 @@ body._lock {
   display: flex;
   -moz-column-gap: 10px;
        column-gap: 10px;
+  row-gap: 10px;
 }
 .footer__socials a {
   border-radius: 20%;
