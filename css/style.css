@@ -312,6 +312,55 @@ body._lock {
   }
 }
 
+.popup {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease-in-out;
+}
+.popup.open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup__body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.766);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup__content {
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+}
+.popup__header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.popup__header a {
+  color: #000;
+  font-size: 30px;
+}
+.popup__title {
+  font-size: 35px;
+  font-family: "Poppins";
+}
+.popup__text {
+  margin-top: 40px;
+  font-size: 19px;
+  line-height: 150%;
+  font-family: "Poppins";
+}
+
 .page {
   padding-bottom: 400px;
 }
@@ -876,6 +925,179 @@ body._lock {
   .sales__img {
     display: none;
   }
+}
+
+.projects__container {
+  padding-top: 150px;
+}
+@media (max-width: 1006px) {
+  .projects__container {
+    padding-top: 130px;
+  }
+}
+@media (max-width: 747px) {
+  .projects__container {
+    padding-top: 80px;
+  }
+}
+.projects__title {
+  text-align: center;
+}
+@media (max-width: 920px) {
+  .projects__title {
+    font-size: 38px;
+  }
+}
+@media (max-width: 768px) {
+  .projects__title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 630px) {
+  .projects__title {
+    text-align: center;
+  }
+}
+.projects__subtitle {
+  text-align: center;
+  margin-top: 6px;
+}
+@media (max-width: 920px) {
+  .projects__subtitle {
+    font-size: 17px;
+  }
+}
+@media (max-width: 768px) {
+  .projects__subtitle {
+    font-size: 16px;
+  }
+}
+@media (max-width: 630px) {
+  .projects__subtitle {
+    text-align: center;
+  }
+}
+.projects__content {
+  position: relative;
+}
+.projects__content ._active-tab {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  transform: translate(0, 0);
+}
+.projects__tabs {
+  margin-top: 58px;
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+}
+@media (max-width: 579px) {
+  .projects__tabs {
+    margin-top: 38px;
+    margin-bottom: 28px;
+  }
+}
+.projects__tabs ._active {
+  color: rgb(84, 94, 225);
+}
+.projects__tabs a {
+  color: rgb(178, 178, 178);
+  font-weight: 400;
+  line-height: 200%;
+  text-transform: capitalize;
+  transition: all 300ms ease-in-out;
+}
+.projects__tabs a:hover {
+  color: rgb(84, 94, 225);
+}
+.projects__all {
+  display: grid;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 30px;
+  transition: all 300ms ease-in-out;
+  grid-template-areas: "web web mobile-1" "mobile-2 branding branding";
+}
+.projects__web {
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  transition: all 300ms ease-in-out;
+}
+.projects__mobile {
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  align-items: start;
+  justify-content: center;
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  transition: all 300ms ease-in-out;
+}
+.projects__branding {
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  transition: all 300ms ease-in-out;
+}
+
+.all-projects__web {
+  grid-area: web;
+}
+.all-projects__web img {
+  max-width: 100%;
+}
+.all-projects__mobile-1 {
+  grid-area: mobile-1;
+}
+.all-projects__mobile-1 img {
+  max-width: 100%;
+}
+.all-projects__mobile-2 {
+  grid-area: mobile-2;
+}
+.all-projects__mobile-2 img {
+  max-width: 100%;
+}
+.all-projects__branding {
+  grid-area: branding;
+}
+.all-projects__branding img {
+  max-width: 100%;
+}
+
+.web-projects__web {
+  max-width: 100%;
+  text-align: center;
+}
+.web-projects__web img {
+  max-width: 100%;
+}
+
+.mobile-projects__mobile-1 img {
+  max-width: 100%;
+}
+.mobile-projects__mobile-2 img {
+  max-width: 100%;
+}
+
+.branding-projects__branding {
+  max-width: 100%;
+  text-align: center;
+}
+.branding-projects__branding img {
+  max-width: 100%;
 }
 
 .blog__container {
