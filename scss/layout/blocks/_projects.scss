@@ -55,11 +55,15 @@
 		display: flex;
 		justify-content: center;
 		column-gap: 30px;
-		row-gap: 15px;
 		flex-wrap: wrap;
 		@media (max-width: 579px) {
 			margin-top: 38px;
 			margin-bottom: 28px;
+		}
+		@media (max-width: 410px) {
+			font-size: 16px;
+			column-gap: 15px;
+			
 		}
 		._active{
 			color: rgb(84, 94, 225);

@@ -993,13 +993,19 @@ body._lock {
   justify-content: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
-  row-gap: 15px;
   flex-wrap: wrap;
 }
 @media (max-width: 579px) {
   .projects__tabs {
     margin-top: 38px;
     margin-bottom: 28px;
+  }
+}
+@media (max-width: 410px) {
+  .projects__tabs {
+    font-size: 16px;
+    -moz-column-gap: 15px;
+         column-gap: 15px;
   }
 }
 .projects__tabs ._active {
