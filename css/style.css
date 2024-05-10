@@ -361,10 +361,6 @@ body._lock {
   font-family: "Poppins";
 }
 
-.page {
-  padding-bottom: 400px;
-}
-
 .main-block {
   background: rgb(84, 94, 225);
   min-height: 100vh;
@@ -1108,6 +1104,7 @@ body._lock {
 
 .blog__container {
   padding-top: 200px;
+  padding-bottom: 162px;
 }
 @media (max-width: 1006px) {
   .blog__container {
@@ -1210,6 +1207,104 @@ body._lock {
 
 .swiper-pagination-bullet-active {
   background: rgb(84, 94, 225);
+}
+
+.subscribe {
+  background-color: rgb(243, 244, 255);
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+.subscribe__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  padding-top: 58px;
+  padding-bottom: 51px;
+}
+@media (max-width: 660px) {
+  .subscribe__container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    justify-content: center;
+  }
+}
+.subscribe__content {
+  flex: 0 1 40%;
+}
+.subscribe__title {
+  color: rgb(25, 25, 25);
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 150%;
+  text-transform: capitalize;
+}
+@media (max-width: 660px) {
+  .subscribe__title {
+    text-align: center;
+  }
+}
+.subscribe__text {
+  color: rgb(102, 102, 102);
+  margin-top: 11px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 168.75%;
+  letter-spacing: 3%;
+  text-transform: capitalize;
+}
+@media (max-width: 660px) {
+  .subscribe__text {
+    text-align: center;
+  }
+}
+.subscribe__form {
+  flex: 0 1 50%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background: rgb(249, 252, 251);
+  opacity: 0.9;
+  padding: 7px;
+  transition: all 300ms ease-in-out;
+}
+.subscribe__form:hover {
+  box-shadow: 0px 20px 35px 0px rgba(84, 94, 225, 0.22);
+}
+.subscribe__email {
+  flex: 0 1 100%;
+  padding: 16px;
+  border-radius: 15px;
+  background-color: inherit;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px 150%;
+}
+.subscribe__btn {
+  border: 1px solid rgb(84, 94, 225);
+  color: #000;
+  background-color: inherit;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 150%;
+  transition: all 300ms ease-in-out;
+  border-radius: 10px;
+  padding: 0 37px 0 37px;
+}
+.subscribe__btn:hover {
+  background: rgb(84, 94, 225);
+  color: rgb(255, 255, 255);
+}
+.subscribe__btn:active {
+  transform: translate(0, 2px);
+}
+@media (max-width: 660px) {
+  .subscribe__btn {
+    padding: 0 15px 0 15px;
+  }
 }
 
 .footer {
