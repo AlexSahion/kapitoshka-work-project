@@ -2,6 +2,7 @@
 
 	&__container {
 		padding-top: 200px;
+		padding-bottom: 162px;
 		@media (max-width: 1006px) {
 			padding-top: 130px;
 		}
@@ -95,9 +96,4 @@
 .swiper-pagination-bullet-active{
 	background: rgb(84, 94, 225);
 }
-.swiper-container {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
+
