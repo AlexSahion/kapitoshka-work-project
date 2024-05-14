@@ -24,6 +24,7 @@ function tabOpen(tab, link) {
 
 function popupOpen(popup) {
 	popup.classList.add('open')
+	body.classList.add('_lock')
 	popup.addEventListener('click', e => {
 		if (!e.target.closest('.popup__content')) {
 			popupClose(popup)
@@ -32,6 +33,7 @@ function popupOpen(popup) {
 }
 function popupClose(popup) {
 	popup.classList.remove('open')
+	body.classList.remove('_lock')
 }
 
 //DELEGATION/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -72,6 +74,7 @@ document.addEventListener('click', e => {
 new Swiper('.blog__slider', {
 	slidesPerView: 1,
 	spaceBetween: 25,
+	loop: true,
 	breakpoints: {
 		615: {
 			slidesPerView: 2,
@@ -79,5 +82,14 @@ new Swiper('.blog__slider', {
 	},
 	pagination: {
 		el: '.blog__pagination',
+	}
+})
+
+new Swiper('.reviews__slider', {
+	spaceBetween: 50,
+	slidesPerView: 2,
+	direction: 'vertical',
+	pagination: {
+		el: '.slider-perviews__pagination',
 	}
 })
