@@ -39,3 +39,14 @@ body{
 	letter-spacing: 1%;
 	text-transform: capitalize;
 }
+
+.pagination{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	span{
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+	}
+}
