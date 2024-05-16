@@ -70,7 +70,7 @@ document.addEventListener('click', e => {
 })
 
 
-//SLIDER/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//SLIDERS/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 new Swiper('.blog__slider', {
 	slidesPerView: 1,
 	spaceBetween: 25,
@@ -85,11 +85,11 @@ new Swiper('.blog__slider', {
 	}
 })
 
-new Swiper('.reviews__slider', {
-	spaceBetween: 50,
-	slidesPerView: 2,
-	direction: 'vertical',
-	pagination: {
-		el: '.slider-perviews__pagination',
-	}
-})
+// new Swiper('.reviews__slider', {
+// 	spaceBetween: 50,
+// 	slidesPerView: 2,
+// 	direction: 'vertical',
+// 	pagination: {
+// 		el: '.slider-perviews__pagination',
+// 	}
+// })
