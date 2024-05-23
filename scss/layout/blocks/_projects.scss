@@ -9,9 +9,6 @@
 		}
 	}
 
-	&__titles {
-	}
-
 	&__title {
 		text-align: center;
 		@media (max-width: 920px) {
@@ -120,10 +117,7 @@
 		transition: $default-trans;
 	}
 }
-.title {
-}
-.subtitle {
-}
+
 .all-projects {
 	&__web {
 		grid-area: web;
