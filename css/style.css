@@ -1521,7 +1521,7 @@ body._lock {
   width: 25px;
   height: 25px;
   transform: rotate(180deg);
-  background: url("../../img/footer/reshot-icon-arrow-up-ZGEKU95YAJ.svg");
+  background: url("../img/footer/reshot-icon-arrow-up-ZGEKU95YAJ.svg");
   transition: all 300ms ease-in-out;
 }
 .footer-spoller__btn._active::after {
