@@ -1277,7 +1277,7 @@ body._lock {
   padding: 7px;
   transition: all 300ms ease-in-out;
 }
-.subscribe__form:hover {
+.subscribe__form:focus-within {
   box-shadow: 0px 20px 35px 0px rgba(84, 94, 225, 0.22);
 }
 .subscribe__email {
@@ -1439,7 +1439,10 @@ body._lock {
   position: relative;
   transition: all 300ms ease-in-out;
 }
-.footer__link::after {
+.footer__link span {
+  position: relative;
+}
+.footer__link span::after {
   content: "";
   width: 0%;
   height: 1px;
@@ -1449,10 +1452,10 @@ body._lock {
   left: 0;
   transition: all 300ms ease-in-out;
 }
-.footer__link:hover {
+.footer__link span:hover {
   color: #000;
 }
-.footer__link:hover::after {
+.footer__link span:hover::after {
   width: 100%;
 }
 .footer__socials {
@@ -1520,12 +1523,14 @@ body._lock {
   display: block;
   width: 25px;
   height: 25px;
-  transform: rotate(180deg);
-  background: url("../img/footer/reshot-icon-arrow-up-ZGEKU95YAJ.svg");
+  transform: rotate(-90deg);
+  background: url("../img/footer/arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   transition: all 300ms ease-in-out;
 }
 .footer-spoller__btn._active::after {
-  transform: rotate(0deg);
+  transform: rotate(90deg);
 }
 .footer-spoller__content {
   margin-top: 10px;
