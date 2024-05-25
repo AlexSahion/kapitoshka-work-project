@@ -46,7 +46,9 @@ function popupOpen(popup) {
 }
 function popupClose(popup) {
 	popup.classList.remove('open')
-	body.classList.remove('_lock')
+	if (!iconMenu.contains('._active')) {
+		body.classList.remove('_lock')
+	}
 }
 
 function hideSpollerBody(spoller) {
