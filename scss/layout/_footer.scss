@@ -108,21 +108,24 @@
 		line-height: 120%;
 		position: relative;
 		transition: $default-trans;
-		&::after{
-			content: '';
-			width: 0%;
-			height: 1px;
-			background-color: #000;
-			position: absolute;
-			bottom: -3px;
-			left: 0;
-			transition: $default-trans;
-		}
-		&:hover{
+		span{
+			position: relative;
 			&::after{
-				width: 100%;
+				content: '';
+				width: 0%;
+				height: 1px;
+				background-color: #000;
+				position: absolute;
+				bottom: -3px;
+				left: 0;
+				transition: $default-trans;
 			}
-			color: #000;
+			&:hover{
+				&::after{
+					width: 100%;
+				}
+				color: #000;
+			}
 		}
 	}
 
@@ -189,13 +192,15 @@
 			display: block;
 			width: 25px;
 			height: 25px;
-			transform: rotate(180deg);
-			background: url('../img/footer/reshot-icon-arrow-up-ZGEKU95YAJ.svg');
+			transform: rotate(-90deg);
+			background: url('../img/footer/arrow.svg');
+			background-size: contain;
+			background-repeat: no-repeat;
 			transition: $default-trans;
 		}
 		&._active{
 			&::after{
-				transform: rotate(0deg);
+				transform: rotate(90deg);
 			}
 		}
 	}
