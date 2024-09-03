@@ -17,36 +17,3 @@ body{
     min-height: 100%;
     overflow: hidden;
 }
-
-.title {
-	color: rgb(51, 51, 51);
-	font-size: 48px;
-	font-weight: 700;
-	line-height: prc(58, 48);
-	text-transform: capitalize;
-}
-
-.subtitle {
-	color: rgb(51, 51, 51);
-	font-weight: 600;
-	line-height: prc(28, 18);
-	letter-spacing: 1%;
-	text-transform: capitalize;
-}
-.text {
-	color: $main-color;
-	line-height: prc(34, 18);
-	letter-spacing: 1%;
-	text-transform: capitalize;
-}
-
-.pagination{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	span{
-		width: 10px;
-		height: 10px;
-		border-radius: 50%;
-	}
-}

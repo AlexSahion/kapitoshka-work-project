@@ -1,0 +1,131 @@
+.main {
+		background-color: rgb(241, 243, 248);
+		position: relative;
+		&__container {
+			position: relative;
+			z-index: 7;
+			min-height: 100vh;
+			padding-top: 80px;
+			align-items: center;
+			display: flex;
+			justify-content: center;
+			padding-bottom: 7vh;
+		}
+
+		&__content {
+			text-align: center;
+			max-width: 600px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&__title {
+			font-size: 60px;
+			font-weight: 600;
+			text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+			margin-bottom: 2vh;
+			line-height: 120%;
+
+			span{
+				color: $main-color;
+				font-size: 60px;
+				font-weight: 600;
+				text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+			}
+
+			@media (max-width:440px) {
+				font-size: 45px;
+				
+				span{
+					font-size: 45px;
+				}
+			}
+		}
+
+		&__text {
+			color: rgb(68, 68, 68);
+			font-family: Rubik;
+			font-size: 20px;
+			font-weight: 300;
+			line-height: prc(28,20);
+			margin-bottom: 7vh;
+
+			@media (max-width:440px) {
+				font-size: 18px;
+			}
+		}
+
+		&__button {
+			a{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				column-gap: 10px;
+				background-color: #fff;
+				border: 1px solid $main-color;
+				font-weight: 500;
+				color: $main-color;
+				border-radius: 10px;
+				box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+				min-height: 54px;
+				padding: 0 30px;
+				transition: $default-trans;
+
+				&::before{
+					font-weight: 500;
+					transition: $default-trans;
+					font-size: 19px;
+				}
+
+				&:hover{
+					background-color: $main-color;
+					color: #fff;
+
+					&::before{
+						color: #fff;
+					}
+				}
+
+				@media (max-width:440px) {
+					font-size: 18px;
+				}
+
+				@media (max-width:700px) {
+					background-color: $main-color;
+					color: #fff;
+				}
+			}
+		}
+}
+
+.bg-img-1{
+	position: absolute;
+	bottom: 8vh;
+	left: 7vw;
+	z-index: 4;
+
+	img{
+		max-width: 100%;
+	}
+
+	@media (max-width:440px) {
+		max-width: 150px;
+	}
+}
+
+.bg-img-2{
+	position: absolute;
+	top: 8vh;
+	right: 7vw;
+	z-index: 4;
+	transform: rotate(180deg);
+
+	img{
+		max-width: 100%;
+	}
+
+	@media (max-width:440px) {
+		max-width: 150px;
+	}
+}
