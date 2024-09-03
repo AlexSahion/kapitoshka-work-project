@@ -1,0 +1,148 @@
+.service {
+	position: relative;
+
+	&__bg-img-1{
+		position: absolute;
+		bottom: 8vh;
+		left: 2vw;
+		z-index: 4;
+
+		img{
+			max-width: 100%;
+		}
+	}
+
+	&__bg-img-2{
+		position: absolute;
+		top: 0vh;
+		right: 2vw;
+		z-index: 4;
+		transform: rotate(180deg);
+
+		img{
+			max-width: 100%;
+		}
+	}
+
+	&__container {
+		@include adaptive-value('padding-top', 80, 40);
+		@include adaptive-value('padding-bottom', 60, 30);
+		position: relative;
+		z-index: 6;
+	}
+
+	&__items {
+		margin-top: 30px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		row-gap: 25px;
+		column-gap: 30px;
+
+		@media (max-width: 680px) {
+			justify-content: space-between;
+			column-gap: 20px;
+		}
+
+		@media (max-width: 680px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__item {
+		flex: 0 1 40%;
+		background-color: rgb(255, 255, 255, 0.3);
+		border: 1px solid rgb(229, 229, 229);
+		border-radius: 40px;
+		padding: 45px 35px;
+		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+		cursor: pointer;
+		transition: $default-trans;
+
+		@media (max-width: 680px) {
+			flex: 0 1 47%;
+		}
+
+		@media (max-width: 580px) {
+			flex: 0 1 80%;
+		}
+
+		@media (max-width: 678px) {
+			background-color: $main-color;
+		}
+
+		&:hover{
+			background-color: $main-color;
+			.item-service__icon{
+				color: #fff;
+				background: rgb(255, 255, 255, 0.2);
+			}
+
+			.item-service__title{
+				color: #fff;
+			}
+
+			.item-service__text{
+				color: rgb(229, 229, 229);
+			}
+		}
+	}
+}
+
+.item-service {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 65px;
+		background: rgb(51, 125, 246, 0.2);
+		padding: 15px;
+		border-radius: 50%;
+		margin-bottom: 16px;
+		transition: $default-trans;
+
+		@media (max-width: 678px) {
+			color: #fff;
+			background-color: rgb(255, 255, 255, 0.2);
+		}
+	}
+
+	&__title {
+		color: rgb(51, 51, 51);
+		font-family: Inter;
+		font-size: 22px;
+		font-weight: 700;
+		line-height: 120%;
+		letter-spacing: 1%;
+		text-transform: capitalize;
+		margin-bottom: 30px;
+		transition: $default-trans;
+
+		@media (max-width: 678px) {
+			color: #fff;
+		}
+	}
+
+	&__text {
+		color: rgb(102, 102, 102);
+		font-weight: 500;
+		line-height: prc(30, 18);
+		letter-spacing: 1%;
+		text-align: center;
+		transition: $default-trans;
+
+		@media (max-width: 678px) {
+			color: rgb(229, 229, 229);
+		}
+	}
+}
+
+.item-service__icon-brush{
+	font-size: 55px;
+	padding: 16px;
+}

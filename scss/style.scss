@@ -7,10 +7,12 @@
 @import "config/fonts";
 @import "config/icons";
 @import "config/functions";
+@import "config/mixins";
 @import "config/vars";
 @import "config/reset";
 @import "config/base";
 //Layout...................................................
 @import "layout/header";
 @import "layout/main";
+@import "layout/service";
 @import "layout/footer";
