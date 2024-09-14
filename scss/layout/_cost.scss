@@ -1,5 +1,5 @@
 .cost {
-	background: rgb(241, 243, 248);
+	background: $main-color;
 
 	&__container{
 		@include adaptive-value('padding-top', 60, 30);
@@ -19,16 +19,24 @@
 	}
 
 	&__slide {
-		box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 		border-radius: 40px;
-		background-color: #fff;
+		border: 1px solid $fouth-color;
 		transition: $default-trans;
 		cursor: pointer;
+	}
+
+	&__title{
+		color: $fouth-color;
+	}
+
+	&__sub-title{
+		color: $fouth-color;
 	}
 }
 .slide{
 	
 }
+
 .slide-cost {
 	&__body {
 		display: flex;
@@ -57,7 +65,7 @@
 
 	&__icon {
 		font-size: 70px;
-		color: $main-color;
+		color: $fouth-color;
 		margin-bottom: 35px;
 		transition: $default-trans;
 
@@ -75,7 +83,7 @@
 	}
 
 	&__title {
-		color: rgb(51, 125, 246);
+		color: $fouth-color;
 		font-family: Inter;
 		font-size: 25px;
 		font-weight: 700;
@@ -98,7 +106,7 @@
 	}
 
 	&__cost {
-		color: rgb(51, 125, 246);
+		color: $fouth-color;
 		font-size: 30px;
 		line-height: 150%;
 		font-weight: 600;
@@ -120,7 +128,7 @@
 
 	&__text {
 		text-align: center;
-		color: rgb(170, 169, 169);
+		color: $fouth-color;
 		font-weight: 500;
 		line-height: 150%;
 		transition: $default-trans;
@@ -142,12 +150,12 @@
 			flex-direction: row-reverse;
 			align-items: center;
 			justify-content: center;
-			color: rgb(51, 125, 246);
+			color: $fouth-color;
 			font-family: Manrope;
 			font-size: 18px;
 			font-weight: 200;
 			line-height: prc(24, 16);
-			border: 1px solid rgb(51, 125, 246);
+			border: 1px solid $fouth-color;
 			border-radius: 10px;
 			min-height: 55px;
 			padding: 0px 30px;
@@ -159,8 +167,8 @@
 			}
 
 			&:hover{
-				background-color: $main-color;
-				color: #fff;
+				background-color: $fouth-color;
+				color: $main-color;
 			}
 
 			@media (max-width: 660px) {
@@ -172,10 +180,6 @@
 			}
 		}
 	}
-}
-
-.swiper{
-	overflow: visible;
 }
 
 .cost-window{
@@ -194,28 +198,28 @@
 
 .swiper-slide-active{
 	.cost__slide{
-		background-color: $main-color;
+		background-color: $fouth-color;
 	}
 	.slide-cost__icon{
-		color: #fff;
+		color: $main-color;
 	}
 	.slide-cost__title{
-		color: #fff;
+		color: $main-color;
 	}
 	.slide-cost__cost{
-		color: #fff;
+		color: $main-color;
 	}
 	.slide-cost__text{
-		color: rgb(229, 229, 229);
+		color: $main-color;
 	}
 	.slide-cost__button{
 		a{
-			color: #fff;
-			border: 1px solid #fff;
+			color: $main-color;
+			border: 1px solid $main-color;
 
 			&:hover{
-				background-color: #fff;
-				color: $main-color;
+				background-color: $main-color;
+				color: $fouth-color;
 			}
 		}
 	}
@@ -224,4 +228,7 @@
 .cost__pagination{
 	margin-top: 30px;
 	text-align: center;
+	span{
+		background-color: $fouth-color;
+	}
 }

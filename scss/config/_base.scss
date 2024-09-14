@@ -18,19 +18,21 @@ body{
     overflow: hidden;
 }
 
+
 .title {
 	font-size: 42px;
 	font-weight: 700;
 	line-height: 160%;
 	text-align: center;
 	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	color: $main-color;
 	
 	@media (max-width:600px) {
 		font-size: 35px;
 	}
 }
 .sut-title {
-	color: rgb(85, 85, 85);
+	color: $main-color;
 	font-family: Rubik;
 	font-weight: 300;
 	line-height: prc(18, 28);

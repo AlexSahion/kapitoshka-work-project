@@ -4,10 +4,11 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+
 	&__container{
 		display: flex;
 		align-items: center;
-		min-height: 80px;
+		min-height: 100px;
 		column-gap: 20px;
 		justify-content: space-between;
 		@media (max-width: 660px) {
@@ -16,39 +17,37 @@
 	}
 
 	&__logo {
+		flex: 0 0 auto;
 		display: flex;
 		align-items: center;
-		column-gap: 8px;
-		flex: 0 0 auto;
 	}
 
 	&__img {
+		max-width: 70px;
 		img{
 			max-width: 100%;
 		}
 	}
 
 	&__name {
-		color: #000;
+		color: $third-color;
 		font-size: 25px;
 		font-weight: 600;
-		@media (max-width: 660px) {
-			font-size: 20px;
-		}
 	}
 
 	&__menu {
-		flex: 1 1 auto;
 		display: flex;
 		justify-content: center;
-		@media (max-width: 660px) {
+		@media (max-width: 690px) {
 			display: none;
 		}
 	}
 
 	&__contact {
 		white-space: nowrap;
-		a{
+	}
+
+	&__contact-link{
 			font-family: Rubik;
 			font-size: 16px;
 			font-weight: 500;
@@ -59,20 +58,13 @@
 			border-radius: 10px;
 			min-height: 50px;
 			padding: 0 30px;
-			color: #000;
+			color: $fouth-color;
 			transition: $default-trans;
+			border: 1px solid $fouth-color;
 
 			&:hover{
-				color: rgb(255, 255, 255);
-				background-color: $main-color;
-			}
-
-			@media (max-width: 660px) {
-				font-size: 14px;
-				min-height: 40px;
-				padding: 0 20px;
-				color: rgb(255, 255, 255);
-				background-color: $main-color;
+				color: $main-color;
+				background-color: $fouth-color;
 			}
 
 			@media (max-width: 360px) {
@@ -81,8 +73,31 @@
 				padding: 0 13px;
 			}
 
+			@media (max-width: 470px) {
+				display: none;
+			}
+	}
+
+	&__add-link{
+		visibility: hidden;
+		display: none;
+		color: $main-color;
+		background-color: $second-color;
+		padding: 10px;
+		border-radius: 50%;
+		font-size: 19px;
+
+		&::before{
+			display: none;
+			@media (max-width: 470px) {
+				display: block;
+			}
 		}
 
+		@media (max-width: 470px) {
+			display: block;
+			visibility: visible;
+		}
 	}
 }
 
@@ -96,7 +111,7 @@
 	}
 
 	&__link{
-		color: #000;
+		color: $fouth-color;
 		font-weight: 400;
 		line-height: 22px;
 		transition: $default-trans;
@@ -110,12 +125,12 @@
 			left: 0;
 			height: 2px;
 			width: 0%;
-			background-color: $main-color;
+			background-color: $second-color;
 			transition: $default-trans;
 		}
 
 		&:hover{
-			color: $main-color;
+			color: $second-color;
 			&:before{
 				width: 100%;
 			}

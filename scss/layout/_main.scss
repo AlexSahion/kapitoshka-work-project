@@ -1,5 +1,5 @@
 .main {
-		background-color: rgb(241, 243, 248);
+		background-color: $main-color;
 		position: relative;
 		&__container {
 			position: relative;
@@ -26,9 +26,10 @@
 			text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 			margin-bottom: 2vh;
 			line-height: 120%;
+			color: #fff;
 
 			span{
-				color: $main-color;
+				color: $third-color;
 				font-size: 60px;
 				font-weight: 600;
 				text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -44,7 +45,7 @@
 		}
 
 		&__text {
-			color: rgb(68, 68, 68);
+			color: $fouth-color;
 			font-family: Rubik;
 			font-size: 20px;
 			font-weight: 300;
@@ -63,27 +64,25 @@
 				justify-content: center;
 				column-gap: 10px;
 				background-color: inherit;
-				border: 1px solid $main-color;
+				border: 1px solid $fouth-color;
 				font-weight: 500;
-				color: $main-color;
+				color: $fouth-color;
 				border-radius: 10px;
-				box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 				min-height: 54px;
 				padding: 0 30px;
 				transition: $default-trans;
 
 				&::before{
 					font-weight: 500;
-					transition: $default-trans;
 					font-size: 19px;
 				}
 
 				&:hover{
-					background-color: $main-color;
-					color: #fff;
+					background-color: $fouth-color;
+					color: $main-color;
 
 					&::before{
-						color: #fff;
+						color: $main-color;
 					}
 				}
 
@@ -104,6 +103,8 @@
 	bottom: 8vh;
 	left: 7vw;
 	z-index: 4;
+	max-width: 150px;
+	transform: scale(-1, 1);
 
 	img{
 		max-width: 100%;
@@ -119,7 +120,7 @@
 	top: 8vh;
 	right: 7vw;
 	z-index: 4;
-	transform: rotate(180deg);
+	max-width: 150px;
 
 	img{
 		max-width: 100%;

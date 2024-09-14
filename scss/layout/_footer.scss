@@ -27,8 +27,13 @@
 	}
 
 	&__logo {
+		flex: 0 0 auto;
 		display: flex;
-		column-gap: 7px;
+		align-items: center;
+	}
+
+	&__img {
+		max-width: 70px;
 		img{
 			max-width: 100%;
 		}
