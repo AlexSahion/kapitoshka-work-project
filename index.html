@@ -16,7 +16,7 @@
 			<div class="header__container">
 				<a href="#" class="header__logo">
 					<div class="header__img">
-						<img src="./img/logo.png" alt="img">
+						<img src="img/logo-logo.svg" alt="">
 					</div>
 					<div class="header__name">Kapitoshka</div>
 				</a>
@@ -37,14 +37,15 @@
 					</ul>
 				</nav>
 				<div class="header__contact">
-					<a href="tel:+48 7325 599 17">+48 7325 599 17</a>
+					<a class="button header__contact-link" href="tel:+48 7325 599 17">+48 7325 599 17</a>
+					<a href="#" class="header__add-link _icon-phone"></a>
 				</div>
 			</div>
 		</header>
 		<main class="page">
 			<section class="main">
-				<img src="./img/Vector.png" alt="img" class="bg-img-1">
-				<img src="./img/Vector.png" alt="img" class="bg-img-2">
+				<img src="./img/bubblse.svg" alt="img" class="bg-img-1">
+				<img src="./img/bubblse.svg" alt="img" class="bg-img-2">
 				<div class="main__container">
 					<div class="main__content">
 						<h1 class="main__title">Firma sprzątająca <span>Kapitoshka</span></h1>
@@ -53,14 +54,12 @@
 							sprzątania.
 						</div>
 						<div class="main__button">
-							<a href="#" class="_icon-phone">Zamówić usługi</a>
+							<a href="#popup" class="_icon-phone _popup">Zamówić usługi</a>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section class="service">
-				<img class="service__bg-img-1" src="./img/vector-2.png" alt="img">
-				<img class="service__bg-img-2" src="./img/vector-2.png" alt="img">
 				<div class="service__container">
 					<div class="service__titles">
 						<div class="service__title title">Usługi</div>
@@ -189,15 +188,16 @@
 				<div class="footer__content">
 					<div class="footer__info">
 						<a href="#" class="footer__logo">
-							<img src="./img/logo-footer.png" alt="img">
+							<img class="footer__img" src="./img/logo-logo.svg" alt="img">
 							<div class="footer__name">Kapitoshka</div>
 						</a>
 						<div class="footer__text footer__text_info">
 							Firma sprzątająca „Kapitoshka” oferuje szeroką gamę profesjonalnych usług sprzątania.
 						</div>
 						<div class="footer__social">
-							<a class="_icon-facebook" href="#"></a>
-							<a class="_icon-inst" href="#"></a>
+							<a class="_icon-facebook" href="https://www.facebook.com/share/iTffyUfJyxi359Lt/"></a>
+							<a class="_icon-inst"
+								href="https://www.instagram.com/kapitoshka.clean.wro?igsh=MTNnbmMwNXQxZTZpdg=="></a>
 						</div>
 					</div>
 					<div class="footer__text">
@@ -209,6 +209,37 @@
 				</div>
 			</div>
 		</footer>
+	</div>
+	<div id="popup" class="popup">
+		<div class="popup__container">
+			<div class="popup__body">
+				<div class="popup__content">
+					<div class="popup__number number-popup">
+						<div class="number-popup__title title _popup-close">Mozez zadzwonic</div>
+						<div class="number-popup__button button">
+							<a class="" href="tel: +48 7325 599 17">+48 7325 599 17</a>
+						</div>
+					</div>
+					<div class="popup__or title">albo</div>
+					<div class="popup__send send-popup">
+						<div class="send-popup__title title">
+							Zostaw swoje dane, a nasz specjalista skontaktuje się z Tobą!
+						</div>
+						<form action="#" class="send-popup__form">
+							<div class="send-popup__name">
+								<input type="text">
+							</div>
+							<div class="send-popup__mail">
+								<input type="email">
+							</div>
+							<div class="send-popup__btn">
+								<button>Wyslac</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
