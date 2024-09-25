@@ -1,5 +1,5 @@
 .footer {
-	background-color: $main-color;
+	background-color: $fouth-color;
 
 	&__container {
 	}
@@ -12,7 +12,7 @@
 		position: relative;
 		column-gap: 30px;
 
-		&::after{
+		&::after,&::before{
 			content: '';
 			width: 10000px;
 			height: 1px;
@@ -20,6 +20,21 @@
 			position: absolute;
 			bottom: 0;
 			left: -5000px;
+		}
+
+		&::after{
+			bottom: 0;
+			left: -5000px;
+		}
+
+		&::before{
+			top: 0;
+			left: -5000px;
+		}
+
+		@media (max-width: 465px) {
+			align-items: center;
+			justify-content: center;
 		}
 	}
 
@@ -30,6 +45,10 @@
 		flex: 0 0 auto;
 		display: flex;
 		align-items: center;
+
+		@media (max-width: 465px) {
+			justify-content: center;
+		}
 	}
 
 	&__img {
@@ -40,20 +59,20 @@
 	}
 
 	&__name {
-		color: #fff;
+		color: $main-color;
 		font-size: 25px;
 		font-weight: 600;
 	}
 
 	&__social {
-		margin-top: 30px;
+		margin-top: 20px;
 		display: flex;
 		column-gap: 8px;
 		a{
-			color: #fff;
+			color: $main-color;
 			padding: 7px;
 			border-radius: 10px;
-			font-size: 20px;
+			font-size: 25px;
 			transition: $default-trans;
 
 			&:hover{
@@ -66,12 +85,16 @@
 				background-color: #fff;
 			}
 		}
+
+		@media (max-width: 465px) {
+			justify-content: center;
+		}
 	}
 
 	&__text {
 		max-width: 300px;
 		text-align: center;
-		color: #fff;
+		color: $main-color;
 		line-height: 120%;
 
 		@media (max-width: 465px) {
@@ -80,9 +103,13 @@
 	}
 
 	&__copy-right {
-		color: #fff;
+		color: #5F5F5F;
 		opacity: 0.8;
 		padding: 15px 0;
+
+		@media (max-width: 465px) {
+			text-align: center;
+		}
 	}
 }
 
@@ -92,6 +119,6 @@
 	@media (max-width: 465px) {
 		margin-top: 20px;
 		display: block;
-		text-align: left;
+		text-align: center;
 	}
 }
