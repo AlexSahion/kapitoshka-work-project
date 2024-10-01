@@ -1,6 +1,17 @@
 .service {
 	position: relative;
 	background-color: $fouth-color;
+
+	&::before{
+		content: '';
+		@include adaptive-value('top', 40, 10);
+		left: 0;
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		background-color: #fff;
+	}
+
 	&__bg-img-1{
 		position: absolute;
 		bottom: 8vh;
