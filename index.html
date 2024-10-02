@@ -23,16 +23,13 @@
 				<nav class="header__menu menu">
 					<ul class="menu__list">
 						<li class="menu__item">
-							<a href="#" class="menu__link">Usługi</a>
+							<a data-goto=".about" href="#" class="menu__link">O nas</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" class="menu__link">Ceny</a>
+							<a data-goto=".service" href="#" class="menu__link">Usługi</a>
 						</li>
 						<li class="menu__item">
-							<a href="#" class="menu__link">Przed i po</a>
-						</li>
-						<li class="menu__item">
-							<a href="#" class="menu__link">Łączność</a>
+							<a data-goto=".cost" href="#" class="menu__link">Ceny</a>
 						</li>
 					</ul>
 				</nav>
@@ -172,9 +169,12 @@
 										<div class="slide-cost__content">
 											<div class="slide-cost__icon _icon-house"></div>
 											<div class="slide-cost__title">ogólny</div>
-											<div class="slide-cost__cost">5 ZL</div>
+											<div class="slide-cost__subtitle">Generalne sprzątanie domu</div>
 											<div class="slide-cost__text">
-												Sprzątanie ogólne 5-9 ZL. metr kwadratowy w zależności od stanu lokalu.
+												<div class="slide-cost__cost">1 Pokój: <span>229 PLN</span> (4 godziny)</div>
+												<div class="slide-cost__cost">1 łazienka: <span>149 PLN</span> (3 godziny)</div>
+												<div class="slide-cost__cost">1 kuchnia: <span>239 PLN</span> (4 godziny)</div>
+												<div class="slide-cost__cost">1 okno: <span>20 PLN</span></div>
 											</div>
 										</div>
 										<div class="slide-cost__button">
@@ -183,16 +183,16 @@
 									</div>
 								</div>
 							</div>
-							<div class="swiper-slide">
+							<div class="swiper-slide slide">
 								<div class="cost__slide slide-cost">
 									<div class="slide-cost__body">
 										<div class="slide-cost__content">
 											<div class="slide-cost__icon _icon-brush-build"></div>
 											<div class="slide-cost__title">Po naprawie</div>
-											<div class="slide-cost__cost">3 ZL</div>
+											<div class="slide-cost__subtitle">Sprzątanie po budowie</div>
 											<div class="slide-cost__text">
-												Sprzątanie po naprawie 3-14 ZL. kw. metr w zależności od
-												stanu pomieszczenia.
+												<div class="slide-cost__cost">Cena od: <span>7 PLN</span> za metr kwadratowy</div>
+												<div class="slide-cost__cost">Okno <span>30 PLN</span></div>
 											</div>
 										</div>
 										<div class="slide-cost__button">
@@ -201,15 +201,18 @@
 									</div>
 								</div>
 							</div>
-							<div class="swiper-slide">
+							<div class="swiper-slide slide">
 								<div class="cost__slide slide-cost">
 									<div class="slide-cost__body">
 										<div class="slide-cost__content">
 											<div class="slide-cost__icon _icon-brush"></div>
 											<div class="slide-cost__title">Wspierający</div>
-											<div class="slide-cost__cost">4 ZL</div>
+											<div class="slide-cost__subtitle">Sprzątanie podtzymujące w mieszkaniu</div>
 											<div class="slide-cost__text">
-												Sprzątanie konserwacyjne 4-7 ZL. metr kwadratowy w zależności od stanu lokalu.
+												<div class="slide-cost__cost">1 Pokój: <span>49 PLN</span> (50 minut)</div>
+												<div class="slide-cost__cost">1 łazienka <span>49 PLN</span> (50 minut)</div>
+												<div class="slide-cost__cost">1 kuchnia: <span>59 PLN</span> (50 minut)</div>
+												<div class="slide-cost__cost">1 okno: <span>29 PLN</span></div>
 											</div>
 										</div>
 										<div class="slide-cost__button">
@@ -218,15 +221,16 @@
 									</div>
 								</div>
 							</div>
-							<div class="swiper-slide">
+							<div class="swiper-slide slide">
 								<div class="cost__slide slide-cost">
 									<div class="slide-cost__body">
 										<div class="slide-cost__content">
-											<div class="slide-cost__icon _icon-school cost-window"></div>
-											<div class="slide-cost__title">Okna</div>
-											<div class="slide-cost__cost">30 ZL</div>
+											<div class="slide-cost__icon _icon-school"></div>
+											<div class="slide-cost__title">Szkola</div>
+											<div class="slide-cost__subtitle">Czyszczenie generalne szkól i innych miejsc</div>
 											<div class="slide-cost__text">
-												Okna 30-45 ZL. metr kwadratowy w zależności od stanu.
+												<div class="slide-cost__cost">Cena: <span>6 PLN/m2</span></div>
+												<div class="slide-cost__cost">Od 40m2: <span>240 PLN</span> (4 godziny)</div>
 											</div>
 										</div>
 										<div class="slide-cost__button">
@@ -235,15 +239,16 @@
 									</div>
 								</div>
 							</div>
-							<div class="swiper-slide">
+							<div class="swiper-slide slide">
 								<div class="cost__slide slide-cost">
 									<div class="slide-cost__body">
 										<div class="slide-cost__content">
-											<div class="slide-cost__icon _icon-biuro cost-window"></div>
-											<div class="slide-cost__title">Okna</div>
-											<div class="slide-cost__cost">30 ZL</div>
+											<div class="slide-cost__icon _icon-biuro"></div>
+											<div class="slide-cost__title">Biuro</div>
+											<div class="slide-cost__subtitle">Sprzątanie generalne biur</div>
 											<div class="slide-cost__text">
-												Okna 30-45 ZL. metr kwadratowy w zależności od stanu.
+												<div class="slide-cost__cost">Cena: <span>7 PLN</span> m2</div>
+												<div class="slide-cost__cost">Od 40 m2: <span>280 PLN</span></div>
 											</div>
 										</div>
 										<div class="slide-cost__button">
@@ -252,15 +257,16 @@
 									</div>
 								</div>
 							</div>
-							<div class="swiper-slide">
+							<div class="swiper-slide slide">
 								<div class="cost__slide slide-cost">
 									<div class="slide-cost__body">
 										<div class="slide-cost__content">
-											<div class="slide-cost__icon _icon-restaurant cost-window"></div>
-											<div class="slide-cost__title">Okna</div>
-											<div class="slide-cost__cost">30 ZL</div>
+											<div class="slide-cost__icon _icon-house"></div>
+											<div class="slide-cost__title">Restauracji</div>
+											<div class="slide-cost__subtitle">Sprzątanie generalne restauracji</div>
 											<div class="slide-cost__text">
-												Okna 30-45 ZL. metr kwadratowy w zależności od stanu.
+												<div class="slide-cost__cost">Cena: <span>9 PLN</span> m2</div>
+												<div class="slide-cost__cost">Od 40 m2: <span>360 PLN</span></div>
 											</div>
 										</div>
 										<div class="slide-cost__button">
