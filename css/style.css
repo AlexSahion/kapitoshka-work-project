@@ -37,6 +37,10 @@
   display: block;
 }
 
+._icon-spray:before {
+  content: "\e90b";
+}
+
 ._icon-biuro:before {
   content: "\e900";
 }
@@ -79,10 +83,6 @@
 
 ._icon-window:before {
   content: "\e90a";
-}
-
-._icon-Picsart_24-09-05_15-39-11-044:before {
-  content: "\e911";
 }
 
 * {
@@ -894,6 +894,12 @@ body._lock {
   background-color: #BDEDF8;
 }
 
+.ps {
+  margin-top: 30px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 120%;
+}
+
 .footer {
   background-color: #BDEDF8;
 }
@@ -1059,7 +1065,8 @@ body._lock {
   font-size: 24px;
   font-weight: 300;
   line-height: 120%;
-  text-align: center;
+  text-align: left;
+  text-indent: 25px;
 }
 @media (max-width: 510px) {
   .about__text {
