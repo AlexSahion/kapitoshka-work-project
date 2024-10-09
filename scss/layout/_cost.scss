@@ -49,6 +49,9 @@
 
 	&__content{
 		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 
 	&__icon {
@@ -98,7 +101,7 @@
 		font-size: 19px;
 		line-height: 120%;
 		font-weight: 600;
-		margin-bottom: 20px;
+		@include adaptive-value('margin-bottom', 30, 20);
 		transition: $default-trans;
 	}
 
@@ -106,9 +109,14 @@
 		span{
 			color: $fouth-color;
 			font-size: 19px;
+			@include adaptive-value('font-size', 19, 16);
 			line-height: 120%;
-			font-weight: 600;
+			font-weight: 700;
 			transition: $default-trans;
+
+			@media (max-width: 660px) {
+				font-size: 20px;
+			}
 		}
 
 		margin-bottom: 5px;
@@ -121,15 +129,12 @@
 		@media (max-width: 660px) {
 			font-size: 20px;
 		}
-
-		@media (max-width: 590px) {
-			font-size: 23px;
-		}
 	}
 
 	&__text {
 		display: flex;
 		flex-direction: column;
+		text-align: left;
 		color: $fouth-color;
 		font-weight: 500;
 		line-height: 150%;
